@@ -15,12 +15,17 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: const [
-          Image(image: AssetImage('assets/images/Proud_Coder_image.png')),
-          Text(
-            'Welcome To Developer Academy',
-            style: TextStyle(
-              fontSize: 24,
-              color: Color.fromARGB(255, 0, 19, 71),
+          Image(
+            image: AssetImage('assets/images/Proud_Coder_image.png'),
+            height: 200,
+          ),
+          Center(
+            child: Text(
+              'Welcome To Developer Academy',
+              style: TextStyle(
+                fontSize: 24,
+                color: Color.fromARGB(255, 0, 19, 71),
+              ),
             ),
           ),
         ],
