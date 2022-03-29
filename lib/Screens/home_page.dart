@@ -5,25 +5,28 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Scaffold(
-        backgroundColor: const Color.fromARGB(255, 0, 44, 109),
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 0, 24, 59),
-          title: const Text(
-            'DevAcademy',
-          ),
+    return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 0, 44, 109),
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 0, 24, 59),
+        title: const Text(
+          'DevAcademy',
         ),
-        body: Center(
-          // ignore: avoid_unnecessary_containers
-          child: Container(
+      ),
+      body: Column(
+        children: [
+          Container(
             child: const Text(
-              'Welcome to 30 days of  Flutter',
+              'Welcome To Developer Academy',
+              style: TextStyle(
+                fontSize: 22,
+                color: Color.fromARGB(255, 255, 255, 255),
+              ),
             ),
           ),
-        ),
-        drawer: Drawer(),
+        ],
       ),
+      drawer: Drawer(),
     );
   }
 }
