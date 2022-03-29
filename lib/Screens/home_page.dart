@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
                   const Padding(
                     padding: EdgeInsets.all(20.0),
                     child: Image(
-                      image: AssetImage('assets/images/Proud_Coder_image.png'),
+                      image: AssetImage('assets/images/Campus_Ambassador.png'),
                       height: 200,
                     ),
                   ),
