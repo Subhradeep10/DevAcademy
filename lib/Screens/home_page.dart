@@ -6,7 +6,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 0, 44, 109),
+      backgroundColor: Color.fromARGB(255, 252, 252, 252),
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 0, 24, 59),
         title: const Text(
@@ -14,14 +14,13 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Column(
-        children: [
-          Container(
-            child: const Text(
-              'Welcome To Developer Academy',
-              style: TextStyle(
-                fontSize: 22,
-                color: Color.fromARGB(255, 255, 255, 255),
-              ),
+        children: const [
+          Image(image: AssetImage('assets/images/Proud_Coder_image.png')),
+          Text(
+            'Welcome To Developer Academy',
+            style: TextStyle(
+              fontSize: 24,
+              color: Color.fromARGB(255, 0, 19, 71),
             ),
           ),
         ],
