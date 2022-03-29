@@ -1,3 +1,4 @@
+import 'package:dev_academy/Screens/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +11,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
-    return Container(
-      child: const Text('Hello World'),
+    return MaterialApp(
+      routes: {
+        '/': (context) => HomePage(),
+      },
     );
   }
 }
