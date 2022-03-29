@@ -12,6 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // ignore: avoid_unnecessary_containers
     return MaterialApp(
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+      ),
       routes: {
         '/': (context) => HomePage(),
       },
