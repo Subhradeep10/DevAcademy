@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Toolkits extends StatelessWidget {
-  const Toolkits({Key? key}) : super(key: key);
+class Toolkits_Component extends StatelessWidget {
+  const Toolkits_Component({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

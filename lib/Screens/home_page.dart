@@ -1,5 +1,7 @@
 import 'package:dev_academy/Landing_page_Component/Campus_Ambassador_component.dart';
 import 'package:dev_academy/Landing_page_Component/OpenSource_Component.dart';
+import 'package:dev_academy/Landing_page_Component/Toolkits_Component.dart';
+import 'package:dev_academy/Landing_page_Component/Web_Development_component.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -43,64 +45,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Campus_Ambassador_Component(),
                   OpenSource(),
-                  const Center(
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Image(
-                        image: AssetImage('assets/images/Web_Development.png'),
-                        height: 150,
-                      ),
-                    ),
-                  ),
-                  Center(
-                    child: Column(
-                      children: [
-                        const Text(
-                          'Web Development',
-                          style: TextStyle(
-                              fontSize: 24,
-                              color: Color.fromARGB(255, 0, 19, 71),
-                              fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding:
-                              EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-                          child: Text(
-                            "A collection of all the tools that are required in web development made by the community to ease the process of web development like CSS Generators, Icons, Illustration, etc.",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 68, 255),
-                              fontWeight: FontWeight.bold,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20))),
-                            onPressed: () {},
-                            child: const Text(
-                              "View More",
-                            ))
-                      ],
-                    ),
-                  ),
-                  const Center(
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Image(
-                        image: AssetImage('assets/images/App_Development.png'),
-                        height: 150,
-                      ),
-                    ),
-                  ),
+                  Web_Development_Component(),
                   Center(
                     child: Column(
                       children: [
@@ -141,55 +86,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  const Center(
-                    child: Padding(
-                      padding: EdgeInsets.all(20.0),
-                      child: Image(
-                        image: AssetImage('assets/images/Toolkits.png'),
-                        height: 150,
-                      ),
-                    ),
-                  ),
-                  Center(
-                    child: Column(
-                      children: [
-                        const Text(
-                          'Toolkits',
-                          style: TextStyle(
-                              fontSize: 24,
-                              color: Color.fromARGB(255, 0, 19, 71),
-                              fontWeight: FontWeight.bold),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        const Padding(
-                          padding:
-                              EdgeInsets.symmetric(vertical: 5, horizontal: 20),
-                          child: Text(
-                            "While the number of ways to organize Software is almost infinite, here are some collection of framework and libraries that can help you while you are working on a project or searching around the web or app",
-                            style: TextStyle(
-                              fontSize: 16,
-                              color: Color.fromARGB(255, 0, 68, 255),
-                              fontWeight: FontWeight.bold,
-                            ),
-                            textAlign: TextAlign.center,
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20))),
-                            onPressed: () {},
-                            child: const Text(
-                              "View More",
-                            ))
-                      ],
-                    ),
-                  ),
+                  Toolkits_Component(),
                   Center(
                     child: Container(
                       width: MediaQuery.of(context).size.width,
