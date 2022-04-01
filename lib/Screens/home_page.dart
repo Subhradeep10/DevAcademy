@@ -44,7 +44,7 @@ class HomePage extends StatelessWidget {
 
                 children: [
                   Campus_Ambassador_Component(),
-                  OpenSource(),
+                  OpenSource_Component(),
                   Web_Development_Component(),
                   Center(
                     child: Column(

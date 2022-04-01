@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class OpenSource extends StatelessWidget {
-  const OpenSource({Key? key}) : super(key: key);
+class OpenSource_Component extends StatelessWidget {
+  const OpenSource_Component({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
