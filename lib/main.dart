@@ -1,5 +1,8 @@
 import 'package:dev_academy/Screens/home_page.dart';
+import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
+
+import 'Screens/campus_ambassadar.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.deepPurple,
       ),
       routes: {
-        '/': (context) => HomePage(),
+        "/": (context) => HomePage(),
+        MyRoutes.CampusAmbassador: (context) => CampusAmbassador(),
       },
     );
   }

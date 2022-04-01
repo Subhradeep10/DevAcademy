@@ -1,4 +1,5 @@
 // ignore: file_names
+import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 
 class Campus_Ambassador_Component extends StatelessWidget {
@@ -50,7 +51,9 @@ class Campus_Ambassador_Component extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20))),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRoutes.CampusAmbassador);
+                  },
                   child: const Text(
                     "View More",
                   ))
