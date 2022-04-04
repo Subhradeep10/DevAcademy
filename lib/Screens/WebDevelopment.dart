@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert';
 // ignore: library_prefixes
 import 'package:flutter/services.dart' as rootBundle;
+import 'package:dev_academy/Model/Web_Dev_Model.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
