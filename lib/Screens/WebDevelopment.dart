@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'dart:convert';
+
+import 'package:flutter/services.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
@@ -8,6 +11,18 @@ class WebDevelopment extends StatefulWidget {
 }
 
 class _WebDevelopmentState extends State<WebDevelopment> {
+  List _items = [];
+
+  // Fetch content from the json file
+  Future<void> readJson() async {
+    final String response =
+        await rootBundle.loadString('assets/Data/Web_Development_data.json');
+    final data = await json.decode(response);
+    setState(() {
+      _items = data["items"];
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -21,6 +36,16 @@ class _WebDevelopmentState extends State<WebDevelopment> {
           ),
         ),
       ),
+      body: ListView.builder(
+          itemCount: _items.length,
+          itemBuilder: (context, int index) {
+            return Card(
+              child: Image(
+                image: AssetImage(_items[index]["image"]),
+                fit: BoxFit.cover,
+              ),
+            );
+          }),
     ));
   }
 }
