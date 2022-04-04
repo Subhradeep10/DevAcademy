@@ -5,8 +5,8 @@ class AppDevelopment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Text('App Development'),
+    return Column(
+      children: const [Center(child: Card())],
     );
   }
 }
