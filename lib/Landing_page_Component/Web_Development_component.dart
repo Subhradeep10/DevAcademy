@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Utils/Routes.dart';
+
 class Web_Development_Component extends StatelessWidget {
   const Web_Development_Component({Key? key}) : super(key: key);
 
@@ -48,7 +50,9 @@ class Web_Development_Component extends StatelessWidget {
                   style: ElevatedButton.styleFrom(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(20))),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, MyRoutes.WebDevelopment);
+                  },
                   child: const Text(
                     "View More",
                   ))

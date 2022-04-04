@@ -2,6 +2,7 @@ import 'package:dev_academy/Screens/home_page.dart';
 import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 
+import 'Screens/WebDevelopment.dart';
 import 'Screens/campus_ambassadar.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) => HomePage(),
         MyRoutes.CampusAmbassador: (context) => CampusAmbassador(),
+        MyRoutes.WebDevelopment: (context) => WebDevelopment(),
       },
     );
   }
