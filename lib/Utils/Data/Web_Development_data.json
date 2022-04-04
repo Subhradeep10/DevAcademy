@@ -1,11 +1,10 @@
-{ 
-"WebDevDatas" : [
+{
+  "WebDevDatas": [
     {
       "link": "https://drawkit.io/",
       "head": "DrawKit",
       "image": "../assets/webdev-img/DrawKit.png",
-      "about":
-        "Hand-drawn vector illustration and icon resources, perfect for your next project.",
+      "about": "Hand-drawn vector illustration and icon resources, perfect for your next project.",
       "alt": "DrawKit",
       "label": "Illustration"
     },
@@ -21,8 +20,7 @@
       "link": "https://storyset.com/",
       "head": "Storyset",
       "image": "../assets/webdev-img/StorySet.png",
-      "about":
-        "Customize, animate and download our illustrations to make incredible landing pages, etc.",
+      "about": "Customize, animate and download our illustrations to make incredible landing pages, etc.",
       "alt": "Storyset",
       "label": "Illustration"
     },
@@ -40,7 +38,7 @@
       "image": "../assets/webdev-img/Handz.jpeg",
       "about": "Free 3D illustrations of diverse hands gestures.",
       "alt": "Handz",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://3d.khagwal.co/",
@@ -48,7 +46,7 @@
       "image": "../assets/webdev-img/Khagwal3D.png",
       "about": "Free 3D illustration pack for web & mobile app designers",
       "alt": "3D Khagwal",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://humans.wannathis.one/",
@@ -56,7 +54,7 @@
       "image": "../assets/webdev-img/Humans.png",
       "about": "The biggest set of 3D characters for Figma and Blender.",
       "alt": "Humans",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://freeillustrations.xyz/",
@@ -64,7 +62,7 @@
       "image": "../assets/webdev-img/FreeIllustration.png",
       "about": "Find free to use illustrations.",
       "alt": "Free Illustration",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://powerpeopleplatform.com/",
@@ -72,7 +70,7 @@
       "image": "../assets/webdev-img/PowerPeoplePlatform.png",
       "about": "It is a delicious design library of 3D avatars. Made with love for more fun and color in your work.",
       "alt": "Power People Platform",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://lottiefiles.com/",
@@ -80,7 +78,7 @@
       "image": "../assets/webdev-img/LottieFiles.png",
       "about": "Lightweight, scalable animations for your website and apps.",
       "alt": "LottieFiles",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://illustrationkit.com/",
@@ -88,7 +86,7 @@
       "image": "../assets/webdev-img/Illustration-Kit.png",
       "about": "Free premium illustrations Updated weekly.",
       "alt": "Illustration Kit",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://error404.fun/",
@@ -96,7 +94,7 @@
       "image": "../assets/webdev-img/404-Error.png",
       "about": "Make a unique journey through 404 error pages on your website.",
       "alt": "404 error pages",
-      "label": "Illustration",
+      "label": "Illustration"
     },
     {
       "link": "https://www.iconshock.com",
@@ -104,7 +102,7 @@
       "image": "../assets/webdev-img/Iconshock.png",
       "about": "2 Million+ professional icons library.",
       "alt": "Iconshock",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://boxicons.com/",
@@ -112,16 +110,15 @@
       "image": "../assets/webdev-img/Boxicons.png",
       "about": "Simple vector icons carefully crafted for designers & developers",
       "alt": "Boxicons",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://akaricons.com/",
       "head": "Akar Icons",
       "image": "../assets/webdev-img/Akar-Icons.png",
-      "about":
-        "Use these icons to bring life into your user interface and experience.",
+      "about": "Use these icons to bring life into your user interface and experience.",
       "alt": "Akar Icons",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://icons.modulz.app/",
@@ -129,7 +126,7 @@
       "image": "../assets/webdev-img/Radix-Icons.png",
       "about": "A crisp set of 15×15 icons designed by the Modulz team.",
       "alt": "Radix Icons",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://www.shapefest.com/",
@@ -137,16 +134,15 @@
       "image": "../assets/webdev-img/Shapefest.png",
       "about": "A massive library of free 3D shapes for anything all.",
       "alt": "Shapefest",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://avatars.dicebear.com/",
       "head": "DiceBear",
       "image": "../assets/webdev-img/DiceBear.png",
-      "about":
-        "DiceBear is an avatar library with a simple and free HTTP API to choose between identicons",
+      "about": "DiceBear is an avatar library with a simple and free HTTP API to choose between identicons",
       "alt": "DiceBear",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://www.flaticon.com/",
@@ -154,7 +150,7 @@
       "image": "../assets/webdev-img/Flaticon.png",
       "about": "Access +5.6M vector icons & stickers.",
       "alt": "Flaticon",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://freeicons.io/",
@@ -162,16 +158,15 @@
       "image": "../assets/webdev-img/Freeicons.png",
       "about": "The Largest Database of Free Icons.",
       "alt": "FreeIcons",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://ionic.io/ionicons",
       "head": "Ionicons",
       "image": "../assets/webdev-img/Ionicons.png",
-      "about":
-        "Premium designed icons for use in web, iOS, Android, and desktop apps.",
+      "about": "Premium designed icons for use in web, iOS, Android, and desktop apps.",
       "alt": "Ionicons",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://www.freepik.com/",
@@ -179,32 +174,30 @@
       "image": "../assets/webdev-img/Freepik.png",
       "about": "Find Free Vectors, Stock Photos and PSD.",
       "alt": "Freepik",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://icons8.com/",
       "head": "Icons8",
       "image": "../assets/webdev-img/Icons8.png",
-      "about":
-        "Professional icons to beautify your work.Multiple formats, customization, and diverse styles.",
+      "about": "Professional icons to beautify your work.Multiple formats, customization, and diverse styles.",
       "alt": "Icons8",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://www.reshot.com/",
       "head": "Reshot",
       "image": "../assets/webdev-img/Reshot.png",
       "about": "Design freely with instant downloads and commercial licenses.",
-      "alt": "Reshot",
+      "alt": "Reshot"
     },
     {
       "link": "https://fontawesome.com/",
       "head": "Font Awesome",
       "image": "../assets/webdev-img/FontAwesome.png",
-      "about":
-        "Get vector icons and social logos on your website with most popular icon set and toolkit.",
+      "about": "Get vector icons and social logos on your website with most popular icon set and toolkit.",
       "alt": "Font Awesome",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://www.iconfinder.com/",
@@ -212,7 +205,7 @@
       "image": "../assets/webdev-img/IconFinder.png",
       "about": "Search through 5,789,724 icons and illustrations.",
       "alt": "Icon Finder",
-      "label": "Icons",
+      "label": "Icons"
     },
     {
       "link": "https://www.happyhues.co/",
@@ -220,7 +213,7 @@
       "image": "../assets/webdev-img/HappyHues.png",
       "about": "Curated colors in context.",
       "alt": "Happy Hues",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://instahues.com/",
@@ -228,7 +221,7 @@
       "image": "../assets/webdev-img/InstaHues.png",
       "about": "Free Color Palettes and Gradients for Designers",
       "alt": "Insta Hues",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://brandcolors.net",
@@ -236,7 +229,7 @@
       "image": "../assets/webdev-img/BrandColors.png",
       "about": "The biggest collection of official brand color codes around.",
       "alt": "Brand Colors",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://vanschneider.com/colors",
@@ -244,7 +237,7 @@
       "image": "../assets/webdev-img/ColorClaim.png",
       "about": "Collect & combine unique colors for your future projects.",
       "alt": "Color Claim",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://culrs.com",
@@ -252,7 +245,7 @@
       "image": "../assets/webdev-img/Culrs.png",
       "about": "Colors that work together are curated and fashioned into quality palettes that you can incorporate.",
       "alt": "Culrs",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://colors.eva.design/",
@@ -260,7 +253,7 @@
       "image": "../assets/webdev-img/EvaColor.png",
       "about": "Complimentary color generator powered by deep learning.",
       "alt": "Eva Color",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://colorhunt.co/",
@@ -268,7 +261,7 @@
       "image": "../assets/webdev-img/ColorHunt.png",
       "about": "Discover the newest hand-picked palettes of Color Hunt.",
       "alt": "Color Hunt",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://pigment.shapefactory.co/",
@@ -276,16 +269,15 @@
       "image": "../assets/webdev-img/Pigment.png",
       "about": "A unique way to generate fresh and vibrant colors.",
       "alt": "Pigment",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://color.adobe.com/",
       "head": "Adobe Color",
       "image": "../assets/webdev-img/AdobeColor.png",
-      "about":
-        "It can be used to generate color palette and save into Creative Cloud.",
+      "about": "It can be used to generate color palette and save into Creative Cloud.",
       "alt": "Adobe Color",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://picular.co/",
@@ -293,7 +285,7 @@
       "image": "../assets/webdev-img/Picular.png",
       "about": "Get color of anything you want.",
       "alt": "Picular",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://colorleap.app/home",
@@ -301,7 +293,7 @@
       "image": "../assets/webdev-img/Color-Leap.jpg",
       "about": "Take a leap through time and see the colors of history.",
       "alt": "Color Leap",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://maketintsandshades.com/",
@@ -309,14 +301,13 @@
       "image": "../assets/webdev-img/MakeTintsandShades.png",
       "about": "Make Tints and Shades by giving hex colors.",
       "alt": "Tint and Shade Generator",
-      "label": "Colors",
+      "label": "Colors"
     },
     {
       "link": "https://neumorphic.design/",
       "head": "Neumorphic Generator",
       "image": "../assets/webdev-img/Neumorphic.png",
-      "about":
-        "This generator makes it easy to create the shapes and comes with 50+ presets for inspiration.",
+      "about": "This generator makes it easy to create the shapes and comes with 50+ presets for inspiration.",
       "alt": "Neumorphic Generator",
       "label": "CSS"
     },
@@ -326,7 +317,7 @@
       "image": "../assets/webdev-img/CSSGenerator.png",
       "about": "This generator lets you generate any CSS you want to create.",
       "alt": "CSS Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://gradient.shapefactory.co/",
@@ -334,25 +325,23 @@
       "image": "../assets/webdev-img/Gradient.png",
       "about": "A unique way to create color gradients.",
       "alt": "Gradient",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://designkiki.com/colordoo/",
       "head": "Colordoo",
       "image": "../assets/webdev-img/Colordoo.jpeg",
-      "about":
-        "We create the new ways to find the top color trends for your next logo, branding, website, illustrations.",
+      "about": "We create the new ways to find the top color trends for your next logo, branding, website, illustrations.",
       "alt": "Colordoo",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://ui.glass/generator/",
       "head": "Glass UI Generator",
       "image": "../assets/webdev-img/GlassUI.png",
-      "about":
-        "Get started with this free generator based on the glassmorphism design.",
+      "about": "Get started with this free generator based on the glassmorphism design.",
       "alt": "Glass UI Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://glassmorphism.com/",
@@ -360,43 +349,39 @@
       "image": "../assets/webdev-img/GlassmorphismGenerator.png",
       "about": "This generator lets you create Glassmorphism CSS.",
       "alt": "Glassmorphism CSS Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://www.meshgradients.design/",
       "head": "Mesh Gradients",
       "image": "../assets/webdev-img/MeshGradients.png",
-      "about":
-        "Download 100 free mesh gradients to make your website look beautiful.",
+      "about": "Download 100 free mesh gradients to make your website look beautiful.",
       "alt": "Mesh Gradients",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://cssgradient.io/",
       "head": "CSS Gradient",
       "image": "../assets/webdev-img/CSS-Gradient.png",
-      "about":
-        "It is a happy little website and free tool that lets you create a gradient background for websites.",
+      "about": "It is a happy little website and free tool that lets you create a gradient background for websites.",
       "alt": "Mesh Gradients",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://coolbackgrounds.io/",
       "head": "Cool Backgrounds",
       "image": "../assets/webdev-img/CoolBackgrounds.png",
-      "about":
-        "Cool Backgrounds is a collection of tools to create compelling, colorful "image"s.",
+      "about": "Cool Backgrounds is a collection of tools to create compelling, colorful images.",
       "alt": "Cool Backgrounds",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://cssgrid-generator.netlify.app/",
       "head": "CSS Grid Generator",
       "image": "../assets/webdev-img/CSSGrid.png",
-      "about":
-        "You can set the numbers, and units of your columns and rows, and it will generate a CSS grid for you.",
+      "about": "You can set the numbers, and units of your columns and rows, and it will generate a CSS grid for you.",
       "alt": "CSS Grid Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://cssbuttongenerator.com/",
@@ -404,25 +389,23 @@
       "image": "../assets/webdev-img/CSSButton.png",
       "about": "Generate CSS of any type of Button you want.",
       "alt": "CSS Button Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://app.haikei.app/",
       "head": "Haikei",
       "image": "../assets/webdev-img/Haikei.png",
-      "about":
-        "Generate Blob, Wave, Blurry Gradients, Circle Scatter, Blob Scene, Layered Waves, etc.",
+      "about": "Generate Blob, Wave, Blurry Gradients, Circle Scatter, Blob Scene, Layered Waves, etc.",
       "alt": "Haikei",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://www.blobmaker.app/",
       "head": "Blobmaker",
       "image": "../assets/webdev-img/BlobMaker.png",
-      "about":
-        "It help you quickly create random, unique, and organic-looking SVG shapes.",
+      "about": "It help you quickly create random, unique, and organic-looking SVG shapes.",
       "alt": "Blobmaker",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://meshgradient.com/",
@@ -430,7 +413,7 @@
       "image": "../assets/webdev-img/MeshGenerator.png",
       "about": "It is a simple generator to create beautiful mesh gradients.",
       "alt": "Mesh Gradient Generator",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://neumorphism.io/",
@@ -438,7 +421,7 @@
       "image": "../assets/webdev-img/Neumorphism.png",
       "about": "Generate CSS for your Neumorphism/Soft UI design.",
       "alt": "Neumorphism Generator",
-      "label": "CSS",
+      "label": "CSS"
     },
     {
       "link": "https://getwaves.io/",
@@ -446,7 +429,7 @@
       "image": "../assets/webdev-img/GetWave.png",
       "about": "A simple web app to generate svg waves, unique every time.",
       "alt": "Get Waves",
-      "label": "Vectors/Svg",
+      "label": "Vectors/Svg"
     },
     {
       "link": "https://www.pexels.com/",
@@ -454,25 +437,23 @@
       "image": "../assets/webdev-img/Pexels.png",
       "about": "The best free stock photos & videos shared by talented creators.",
       "alt": "Pexels",
-      "label": "Stock Photos",
+      "label": "Stock Photos"
     },
     {
       "link": "https://unsplash.com/",
       "head": "Unsplash",
       "image": "../assets/webdev-img/Unsplash.png",
-      "about": "The internet’s source of freely-usable "image"s.",
+      "about": "The internet’s source of freely-usable images.",
       "alt": "Unsplash",
-      "label": "Stock Photos",
+      "label": "Stock Photos"
     },
     {
       "link": "https://pixabay.com/",
       "head": "Pixabay",
       "image": "../assets/webdev-img/Pixabay.png",
-      "about":
-        "Over 2.4 million+ high quality stock "image"s, videos and music shared by our talented community.",
+      "about": "Over 2.4 million+ high quality stock images, videos and music shared by our talented community.",
       "alt": "Pixabay",
-      "label": "Stock Photos",
-    },
-  ];
-
+      "label": "Stock Photos"
+    }
+  ]
 }
