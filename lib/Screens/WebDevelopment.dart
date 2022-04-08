@@ -1,3 +1,4 @@
+import 'package:dev_academy/api/WebDev_Model_Api.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 // ignore: library_prefixes
@@ -31,7 +32,9 @@ class _WebDevelopmentState extends State<WebDevelopment> {
             ),
           ),
           // ignore: deprecated_member_use
-          body: FutureBuilder < List<User>(),
+          body: FutureBuilder<List<WebDevModel>>(
+              future: WebDevModelApi.getUserLocallly(context),
+              builder: (context, snapshot) {}),
         ),
       ),
     );
