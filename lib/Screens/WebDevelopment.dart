@@ -1,4 +1,3 @@
-import 'package:dev_academy/api/WebDev_Model_Api.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 // ignore: library_prefixes
@@ -13,16 +12,24 @@ class WebDevelopment extends StatefulWidget {
 }
 
 class _WebDevelopmentState extends State<WebDevelopment> {
-  List _items = [];
-
   // Fetch content from the json file
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: SafeArea(
+    return SafeArea(
+      child: Container(
+        width: MediaQuery.of(context).size.width - 20,
+        decoration: const BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(10)),
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color.fromARGB(255, 60, 32, 65),
+                  Color.fromARGB(255, 19, 0, 77)
+                ])),
         child: Scaffold(
-          backgroundColor: Color.fromARGB(255, 241, 255, 255),
+          backgroundColor: Colors.transparent,
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 0, 24, 59),
             title: const Center(
@@ -32,9 +39,67 @@ class _WebDevelopmentState extends State<WebDevelopment> {
             ),
           ),
           // ignore: deprecated_member_use
-          body: FutureBuilder<List<WebDevModel>>(
-              future: WebDevModelApi.getUserLocallly(context),
-              builder: (context, snapshot) {}),
+          body: Center(
+            child: FutureBuilder(
+              builder: (context, snapshot) {
+                var showData = json.decode(snapshot.data.toString());
+                return ListView.builder(
+                  itemCount: showData.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return Center(
+                      child: Container(
+                        child: Card(
+                          child: Container(
+                            width: MediaQuery.of(context).size.width - 20,
+                            decoration: const BoxDecoration(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(0)),
+                                gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomRight,
+                                    colors: [
+                                      Color.fromARGB(255, 175, 21, 202),
+                                      Color.fromARGB(255, 241, 152, 26)
+                                    ])),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              children: [
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Center(
+                                  child: Text(
+                                    showData[index]['head'],
+                                    style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                ),
+                                Image.network(showData[index]['image'],
+                                    height: 250, width: 100),
+                                Center(
+                                  child: Text(
+                                    showData[index]['about'],
+                                    style: const TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
+              future: DefaultAssetBundle.of(context)
+                  .loadString("assets/Data/Web_Development_data.json"),
+            ),
+          ),
         ),
       ),
     );
