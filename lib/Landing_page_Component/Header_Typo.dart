@@ -7,9 +7,15 @@ class Header_Component extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: const [
+        SizedBox(
+          height: 20,
+        ),
         Image(
           image: AssetImage('assets/images/Proud_Coder_image.png'),
           height: 300,
+        ),
+        SizedBox(
+          height: 15,
         ),
         Center(
           child: Text(
@@ -19,6 +25,9 @@ class Header_Component extends StatelessWidget {
                 color: Color.fromARGB(255, 255, 255, 255),
                 fontWeight: FontWeight.bold),
           ),
+        ),
+        SizedBox(
+          height: 10,
         ),
       ],
     );
