@@ -13,36 +13,46 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 255, 255),
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 0, 24, 59),
-          title: const Center(
-            child: Text(
-              'DevAcademy',
+      child: Container(
+        decoration: const BoxDecoration(
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+              Color.fromARGB(255, 60, 32, 65),
+              Color.fromARGB(255, 19, 0, 77)
+            ])),
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          appBar: AppBar(
+            backgroundColor: const Color.fromARGB(255, 0, 24, 59),
+            title: const Center(
+              child: Text(
+                'DevAcademy',
+              ),
             ),
           ),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              const Header_Component(),
-              Wrap(
-                spacing: 16.0, // gap between adjacent chips
-                runSpacing: 8.0, // gap between lines
-                direction: Axis.horizontal,
+          body: SingleChildScrollView(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                const Header_Component(),
+                Wrap(
+                  spacing: 16.0, // gap between adjacent chips
+                  runSpacing: 8.0, // gap between lines
+                  direction: Axis.horizontal,
 
-                children: const [
-                  Campus_Ambassador_Component(),
-                  OpenSource_Component(),
-                  Web_Development_Component(),
-                  AppDevelopment_Component(),
-                  Toolkits_Component(),
-                  Footer_Component(),
-                ],
-              ),
-            ],
+                  children: const [
+                    Campus_Ambassador_Component(),
+                    OpenSource_Component(),
+                    Web_Development_Component(),
+                    AppDevelopment_Component(),
+                    Toolkits_Component(),
+                    Footer_Component(),
+                  ],
+                ),
+              ],
+            ),
           ),
         ),
       ),

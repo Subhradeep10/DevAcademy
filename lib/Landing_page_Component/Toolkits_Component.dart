@@ -23,7 +23,7 @@ class Toolkits_Component extends StatelessWidget {
                 'Toolkits',
                 style: TextStyle(
                     fontSize: 24,
-                    color: Color.fromARGB(255, 0, 19, 71),
+                    color: Color.fromARGB(255, 253, 253, 255),
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -35,7 +35,7 @@ class Toolkits_Component extends StatelessWidget {
                   "While the number of ways to organize Software is almost infinite, here are some collection of framework and libraries that can help you while you are working on a project or searching around the web or app",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 0, 68, 255),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,

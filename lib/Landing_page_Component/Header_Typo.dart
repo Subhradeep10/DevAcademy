@@ -16,7 +16,7 @@ class Header_Component extends StatelessWidget {
             'Welcome To Developer Academy',
             style: TextStyle(
                 fontSize: 24,
-                color: Color.fromARGB(255, 0, 19, 71),
+                color: Color.fromARGB(255, 255, 255, 255),
                 fontWeight: FontWeight.bold),
           ),
         ),

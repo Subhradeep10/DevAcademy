@@ -23,7 +23,7 @@ class OpenSource_Component extends StatelessWidget {
                 'Open Source',
                 style: TextStyle(
                     fontSize: 24,
-                    color: Color.fromARGB(255, 0, 19, 71),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -35,7 +35,7 @@ class OpenSource_Component extends StatelessWidget {
                   "Here you can find all the resources and details of Open Source Programs and event that are available across different countries.",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 0, 68, 255),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,

@@ -26,7 +26,7 @@ class Campus_Ambassador_Component extends StatelessWidget {
                 'Campus Ambassador',
                 style: TextStyle(
                     fontSize: 24,
-                    color: Color.fromARGB(255, 0, 19, 71),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -38,7 +38,7 @@ class Campus_Ambassador_Component extends StatelessWidget {
                   "Place where you can find all the resources and details of ambassador/fellowship that are available across different countries and companies.",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 0, 68, 255),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
