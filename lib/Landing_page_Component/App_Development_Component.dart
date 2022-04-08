@@ -14,7 +14,7 @@ class AppDevelopment_Component extends StatelessWidget {
                 'App Development',
                 style: TextStyle(
                     fontSize: 24,
-                    color: Color.fromARGB(255, 0, 19, 71),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -26,7 +26,7 @@ class AppDevelopment_Component extends StatelessWidget {
                   "A Curated collection of all the tools that are required in App Development made by the community to ease the process of App Development like Flutter, React Native, etc.",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 0, 68, 255),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,

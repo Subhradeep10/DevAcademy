@@ -25,7 +25,7 @@ class Web_Development_Component extends StatelessWidget {
                 'Web Development',
                 style: TextStyle(
                     fontSize: 24,
-                    color: Color.fromARGB(255, 0, 19, 71),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold),
               ),
               const SizedBox(
@@ -37,7 +37,7 @@ class Web_Development_Component extends StatelessWidget {
                   "A collection of all the tools that are required in web development made by the community to ease the process of web development like CSS Generators, Icons, Illustration, etc.",
                   style: TextStyle(
                     fontSize: 16,
-                    color: Color.fromARGB(255, 0, 68, 255),
+                    color: Color.fromARGB(255, 255, 255, 255),
                     fontWeight: FontWeight.bold,
                   ),
                   textAlign: TextAlign.center,
