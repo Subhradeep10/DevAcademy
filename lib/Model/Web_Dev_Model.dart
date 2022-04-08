@@ -16,4 +16,14 @@ class WebDevModel {
     required this.alt,
     required this.label,
   });
+  static WebDevModel fromJson(Map<String, dynamic> json) {
+    return WebDevModel(
+      link: json['link'],
+      head: json['head'],
+      image: json['image'],
+      about: json['about'],
+      alt: json['alt'],
+      label: json['label'],
+    );
+  }
 }
