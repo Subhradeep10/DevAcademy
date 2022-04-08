@@ -63,7 +63,10 @@ class OpenSource_Component extends StatelessWidget {
                       onPressed: () {},
                       child: const Text(
                         "View More",
-                      ))
+                      )),
+                  const SizedBox(
+                    height: 10,
+                  ),
                 ],
               ),
             ),
