@@ -18,27 +18,21 @@ class _WebDevelopmentState extends State<WebDevelopment> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        backgroundColor: Color.fromARGB(255, 241, 255, 255),
-        appBar: AppBar(
-          backgroundColor: const Color.fromARGB(255, 0, 24, 59),
-          title: const Center(
-            child: Text(
-              'DevAcademy',
+    return Container(
+      child: SafeArea(
+        child: Scaffold(
+          backgroundColor: Color.fromARGB(255, 241, 255, 255),
+          appBar: AppBar(
+            backgroundColor: const Color.fromARGB(255, 0, 24, 59),
+            title: const Center(
+              child: Text(
+                'DevAcademy',
+              ),
             ),
           ),
+          // ignore: deprecated_member_use
+          body: FutureBuilder < List<User>(),
         ),
-        body: ListView.builder(
-            itemCount: _items.length,
-            itemBuilder: (context, int index) {
-              return Card(
-                child: Image(
-                  image: AssetImage(_items[index]["image"]),
-                  fit: BoxFit.cover,
-                ),
-              );
-            }),
       ),
     );
   }

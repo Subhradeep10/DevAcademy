@@ -1,25 +1,19 @@
-class WebDevModel {
-  String? link;
-  String? head;
-  String? image;
-  String? about;
-  String? alt;
-  String? label;
+import 'package:meta/meta.dart';
 
-  WebDevModel({
-    this.link,
-    this.head,
-    this.image,
-    this.about,
-    this.alt,
-    this.label,
+class WebDevModel {
+  final String link;
+  final String head;
+  final String image;
+  final String about;
+  final String alt;
+  final String label;
+
+  const WebDevModel({
+    required this.link,
+    required this.head,
+    required this.image,
+    required this.about,
+    required this.alt,
+    required this.label,
   });
-  WebDevModel.fromJson(Map<String, dynamic> json) {
-    link = json['link'];
-    head = json['head'];
-    image = json['image'];
-    about = json['about'];
-    alt = json['alt'];
-    label = json['label'];
-  }
 }
