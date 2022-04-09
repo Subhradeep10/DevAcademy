@@ -2,7 +2,7 @@
   {
     "link": "https://research.adobe.com/adobe-india-women-in-technology-scholarship/",
     "head": "Adobe India Women-in-Technology Scholarship",
-    "image": "../assets/ambassador-img/Adobe.png",
+    "image": "https://devempire.netlify.app/assets/ambassador-img/Adobe.png",
     "about": "They strive towards creating gender equality by encouraging women.",
     "alt": "Adobe Logo"
   },
