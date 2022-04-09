@@ -3,6 +3,7 @@ import 'dart:convert';
 // ignore: library_prefixes
 import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/Web_Dev_Model.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
@@ -62,7 +63,7 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                       Color.fromARGB(255, 241, 152, 26)
                                     ])),
                             child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.stretch,
+                              crossAxisAlignment: CrossAxisAlignment.center,
                               children: [
                                 const SizedBox(
                                   height: 10,
@@ -72,21 +73,47 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                     showData[index]['head'],
                                     style: const TextStyle(
                                         color: Colors.white,
-                                        fontSize: 20,
+                                        fontSize: 24,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 ),
-                                Image.network(showData[index]['image'],
-                                    height: 250, width: 100),
-                                Center(
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Image.network(
+                                  showData[index]['image'],
+                                  width: 350,
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(10.0),
                                   child: Text(
                                     showData[index]['about'],
+                                    textAlign: TextAlign.center,
                                     style: const TextStyle(
                                         color: Colors.white,
                                         fontSize: 16,
                                         fontWeight: FontWeight.bold),
                                   ),
-                                )
+                                ),
+                                const SizedBox(
+                                  height: 10,
+                                ),
+                                ElevatedButton(
+                                    onPressed: () async {
+                                      final url = showData[index]['link'];
+                                      if (await canLaunch(url)) {
+                                        await launch(url);
+                                      } else {
+                                        throw 'Could not launch $url';
+                                      }
+                                    },
+                                    child: const Text('View')),
+                                const SizedBox(
+                                  height: 10,
+                                ),
                               ],
                             ),
                           ),
