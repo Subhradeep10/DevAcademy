@@ -1,3 +1,4 @@
+import 'package:dev_academy/Screens/Toolkits.dart';
 import 'package:dev_academy/Screens/home_page.dart';
 import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.CampusAmbassador: (context) => CampusAmbassador(),
         MyRoutes.WebDevelopment: (context) => WebDevelopment(),
         MyRoutes.OpenSource: (context) => OpenSource(),
+        MyRoutes.Toolkits: (context) => Toolkits(),
       },
     );
   }
