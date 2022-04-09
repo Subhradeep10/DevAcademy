@@ -1,0 +1,29 @@
+import 'package:meta/meta.dart';
+
+class OpenSourceModel {
+  final String link;
+  final String head;
+  final String image;
+  final String about;
+  final String alt;
+  final String label;
+
+  const OpenSourceModel({
+    required this.link,
+    required this.head,
+    required this.image,
+    required this.about,
+    required this.alt,
+    required this.label,
+  });
+  static OpenSourceModel fromJson(Map<String, dynamic> json) {
+    return OpenSourceModel(
+      link: json['link'],
+      head: json['head'],
+      image: json['image'],
+      about: json['about'],
+      alt: json['alt'],
+      label: json['label'],
+    );
+  }
+}
