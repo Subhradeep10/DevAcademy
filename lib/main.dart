@@ -2,6 +2,7 @@ import 'package:dev_academy/Screens/home_page.dart';
 import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 
+import 'Screens/OpenSource.dart';
 import 'Screens/WebDevelopment.dart';
 import 'Screens/campus_ambassadar.dart';
 
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => HomePage(),
         MyRoutes.CampusAmbassador: (context) => CampusAmbassador(),
         MyRoutes.WebDevelopment: (context) => WebDevelopment(),
+        MyRoutes.OpenSource: (context) => OpenSource(),
       },
     );
   }

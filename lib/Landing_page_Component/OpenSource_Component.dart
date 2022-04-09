@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../Utils/Routes.dart';
+
 class OpenSource_Component extends StatelessWidget {
   const OpenSource_Component({Key? key}) : super(key: key);
 
@@ -60,7 +62,9 @@ class OpenSource_Component extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyRoutes.OpenSource);
+                      },
                       child: const Text(
                         "View More",
                       )),
