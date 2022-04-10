@@ -1,5 +1,7 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Footer_Component extends StatelessWidget {
   const Footer_Component({Key? key}) : super(key: key);
 
@@ -10,7 +12,7 @@ class Footer_Component extends StatelessWidget {
         Center(
           child: Container(
             width: MediaQuery.of(context).size.width,
-            color: Color.fromARGB(255, 1, 32, 58),
+            color: const Color.fromARGB(255, 1, 32, 58),
             height: 60,
             child: const SizedBox(
               child: Center(

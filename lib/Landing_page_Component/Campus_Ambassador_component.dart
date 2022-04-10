@@ -2,6 +2,7 @@
 import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class Campus_Ambassador_Component extends StatelessWidget {
   const Campus_Ambassador_Component({Key? key}) : super(key: key);
 
