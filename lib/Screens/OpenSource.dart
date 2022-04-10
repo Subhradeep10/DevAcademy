@@ -41,6 +41,23 @@ class _OpenSourceState extends State<OpenSource> {
           body: Center(
             child: Column(
               children: [
+                const SizedBox(
+                  height: 20,
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    'Open Source Events',
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
                 Expanded(
                   child: FutureBuilder(
                     builder: (context, snapshot) {

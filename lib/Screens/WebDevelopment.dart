@@ -57,13 +57,13 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                         color: Colors.white),
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 const SizedBox(
                   height: 20,
                 ),
                 Expanded(
-                  flex: 0,
                   child: FutureBuilder(
                     builder: (context, snapshot) {
                       var showData = json.decode(snapshot.data.toString());
