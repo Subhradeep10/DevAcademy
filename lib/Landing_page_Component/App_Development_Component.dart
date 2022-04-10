@@ -1,3 +1,4 @@
+import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 
 class AppDevelopment_Component extends StatelessWidget {
@@ -60,7 +61,9 @@ class AppDevelopment_Component extends StatelessWidget {
                       style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20))),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyRoutes.AppDevelopment);
+                      },
                       child: const Text(
                         "View More",
                       ))
