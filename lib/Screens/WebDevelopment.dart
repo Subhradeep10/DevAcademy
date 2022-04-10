@@ -41,94 +41,132 @@ class _WebDevelopmentState extends State<WebDevelopment> {
           ),
           // ignore: deprecated_member_use
           body: Center(
-            child: FutureBuilder(
-              builder: (context, snapshot) {
-                var showData = json.decode(snapshot.data.toString());
-                return ListView.builder(
-                  itemCount: showData.length,
-                  itemBuilder: (BuildContext context, int index) {
-                    return Center(
-                      child: Container(
-                        child: Card(
-                          child: Container(
-                            width: MediaQuery.of(context).size.width - 20,
-                            decoration: const BoxDecoration(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(0)),
-                                gradient: LinearGradient(
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                    colors: [
-                                      Color.fromARGB(255, 175, 21, 202),
-                                      Color.fromARGB(255, 241, 152, 26)
-                                    ])),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.center,
-                              children: [
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Center(
-                                  child: Text(
-                                    showData[index]['head'],
-                                    style: const TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 24,
-                                        fontWeight: FontWeight.bold),
+            child: Column(
+              children: [
+                const SizedBox(
+                  height: 20,
+                ),
+                const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    'Web Development Tools',
+                    style: TextStyle(
+                        fontSize: 30,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Text(
+                  'A collection of all the tools that are required in web development made by the community to ease the process of web development.',
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                  textAlign: TextAlign.center,
+                ),
+                buildSearch(),
+                Expanded(
+                  child: FutureBuilder(
+                    builder: (context, snapshot) {
+                      var showData = json.decode(snapshot.data.toString());
+                      return ListView.builder(
+                        itemCount: showData.length,
+                        itemBuilder: (BuildContext context, int index) {
+                          return Center(
+                            child: Container(
+                              child: Card(
+                                child: Container(
+                                  width: MediaQuery.of(context).size.width - 20,
+                                  decoration: const BoxDecoration(
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(0)),
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topLeft,
+                                          end: Alignment.bottomRight,
+                                          colors: [
+                                            Color.fromARGB(255, 175, 21, 202),
+                                            Color.fromARGB(255, 241, 152, 26)
+                                          ])),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      Center(
+                                        child: Text(
+                                          showData[index]['head'],
+                                          style: const TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 24,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      Image.network(
+                                        showData[index]['image'],
+                                        width: 350,
+                                      ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.all(10.0),
+                                        child: Text(
+                                          showData[index]['about'],
+                                          textAlign: TextAlign.center,
+                                          style: const TextStyle(
+                                              color: Colors.white,
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                      ElevatedButton(
+                                          onPressed: () async {
+                                            final url = showData[index]['link'];
+                                            if (await canLaunch(url)) {
+                                              await launch(url);
+                                            } else {
+                                              throw 'Could not launch $url';
+                                            }
+                                          },
+                                          child: const Text('View')),
+                                      const SizedBox(
+                                        height: 10,
+                                      ),
+                                    ],
                                   ),
                                 ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Image.network(
-                                  showData[index]['image'],
-                                  width: 350,
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Text(
-                                    showData[index]['about'],
-                                    textAlign: TextAlign.center,
-                                    style: const TextStyle(
-                                        color: Colors.white,
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold),
-                                  ),
-                                ),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                                ElevatedButton(
-                                    onPressed: () async {
-                                      final url = showData[index]['link'];
-                                      if (await canLaunch(url)) {
-                                        await launch(url);
-                                      } else {
-                                        throw 'Could not launch $url';
-                                      }
-                                    },
-                                    child: const Text('View')),
-                                const SizedBox(
-                                  height: 10,
-                                ),
-                              ],
+                              ),
                             ),
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                );
-              },
-              future: DefaultAssetBundle.of(context)
-                  .loadString("assets/Data/Web_Development_data.json"),
+                          );
+                        },
+                      );
+                    },
+                    future: DefaultAssetBundle.of(context)
+                        .loadString("assets/Data/Web_Development_data.json"),
+                  ),
+                )
+              ],
             ),
           ),
         ),
       ),
     );
   }
+
+  Widget buildsearch() => SearchWidget(
+        text: query,
+        hintText: 'Title or Author Name',
+        onChanged: searchBook,
+      );
 }
