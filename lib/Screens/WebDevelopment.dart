@@ -1,9 +1,12 @@
+import 'package:dev_academy/Landing_page_Component/Footer_Component.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 // ignore: library_prefixes
 import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/Web_Dev_Model.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../Widget/Search_Widget.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
@@ -59,16 +62,8 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
-                  'A collection of all the tools that are required in web development made by the community to ease the process of web development.',
-                  style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white),
-                  textAlign: TextAlign.center,
-                ),
-                buildSearch(),
                 Expanded(
+                  flex: 0,
                   child: FutureBuilder(
                     builder: (context, snapshot) {
                       var showData = json.decode(snapshot.data.toString());
@@ -155,7 +150,7 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                     future: DefaultAssetBundle.of(context)
                         .loadString("assets/Data/Web_Development_data.json"),
                   ),
-                )
+                ),
               ],
             ),
           ),
@@ -163,10 +158,4 @@ class _WebDevelopmentState extends State<WebDevelopment> {
       ),
     );
   }
-
-  Widget buildsearch() => SearchWidget(
-        text: query,
-        hintText: 'Title or Author Name',
-        onChanged: searchBook,
-      );
 }
