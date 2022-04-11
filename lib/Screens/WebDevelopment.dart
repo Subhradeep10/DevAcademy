@@ -104,8 +104,9 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                       const SizedBox(
                                         height: 10,
                                       ),
-                                      Image.network(
-                                        showData[index]['image'],
+                                      Image(
+                                        image: AssetImage(
+                                            showData[index]['image']),
                                         width: 350,
                                       ),
                                       const SizedBox(
