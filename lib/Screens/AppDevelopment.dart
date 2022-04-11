@@ -47,7 +47,7 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                 const Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Text(
-                    'Campus Ambassador Program',
+                    'App Development Tools',
                     style: TextStyle(
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
