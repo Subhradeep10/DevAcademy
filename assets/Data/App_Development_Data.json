@@ -2,35 +2,35 @@
   {
     "link": "https://buddy.works/?utm_source=guru99_mobile_tools&utm_medium=referral&utm_campaign=guru99",
     "head": "Buddy",
-    "image": "https://www.guru99.com/images/1/buddy_logo.png",
+    "image": "assets/images/appdev-img/buddy.png",
     "about": "Buddy allows for seamless, changeset-based deployments",
     "alt": "Buddy Logo"
   },
   {
     "link": "https://kobiton.com/?utm_campaign=guru99-best-mobile-app-dev-tools&utm_source=guru99&utm_medium=listing",
     "head": "Kobiton",
-    "image": "https://www.guru99.com/images/5-2015/kobiton.png",
+    "image": "assets/images/appdev-img/Kobiton.jpg",
     "about": "Kobiton makes Continuous Testing and Mobile/IoT DevOps a reality.",
     "alt": "Kobiton Logo"
   },
   {
     "link": "https://www.genexus.com/en/?utm_source=referrel&utm_medium=cpc&utm_campaign=guru_99",
     "head": "GeneXus",
-    "image": "https://www.guru99.com/images/2/genexus-logo-1.png",
+    "image": "assets/images/appdev-img/genexus.png",
     "about": "GeneXus provides a unique platform that captures the needs of users and generates applications for present and future technologies, without the need to learn new technology.",
     "alt": "Genexus Logo"
   },
   {
     "link": "https://www.appypie.com/app-builder/appmaker?utm_source=LinkConnector&utm_medium=Affiliate&utm_campaign=NoFree&usource=lc&lctid=1059076",
     "head": "Appypie",
-    "image": "https://www.guru99.com/images/2/appypie-logo.png",
+    "image": "assets/images/appdev-img/Appy-Pie.jpg",
     "about": "Appypie is a tool that enables you to make your mobile app without coding.",
     "alt": "Appypie Logo"
   },
   {
     "link": "https://dotnet.microsoft.com/en-us/apps/xamarin",
     "head": "Xamarin",
-    "image": "https://www.guru99.com/images/2-2017/092917_0524_Top26Mobile1.png",
+    "image": "assets/images/appdev-img/Xamarin.png",
     "about": "Xamarin is the preferred mobile app development tool for native applications",
     "alt": "Xamarin Logo"
   }

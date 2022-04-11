@@ -65,6 +65,10 @@ flutter:
   assets:
     - assets/images/
     - assets/images/webdev-img/
+    - assets/images/programs-img/
+    - assets/images/ambassador-img/
+    - assets/images/js-toolkits-img/
+    - assets/images/appdev-img/
     - assets/Data/
 
   # An image asset can refer to one or more resolution-specific "variants", see
