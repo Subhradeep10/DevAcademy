@@ -94,6 +94,7 @@ class _OpenSourceState extends State<OpenSource> {
                                               color: Colors.white,
                                               fontSize: 24,
                                               fontWeight: FontWeight.bold),
+                                          textAlign: TextAlign.center,
                                         ),
                                       ),
                                       const SizedBox(
