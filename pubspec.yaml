@@ -35,6 +35,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_native_splash: ^2.1.2+1
   url_launcher: ^6.0.20
+  google_mobile_ads: ^6.0.0
+  provider: ^1.0.0
 
 flutter_native_splash:
   color: "#001b47"
