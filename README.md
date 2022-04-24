@@ -5,15 +5,40 @@
   <img src="https://img.shields.io/badge/figma%20-%23121011.svg?&style=for-the-badge&logo=figma&logoColor=pink">
   </p>
 
+<h1 align=center> Application Preview 👀 </h1>
+<p align="center">
+    <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722758.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722765.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722793.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722799.png" height="363px" width="181px">
+<p align="center">
+  <a href="https://github.com/Subhradeep10/VideoApp/releases/download/v-1.0/VideoApp.apk">
+    <img src="https://forthebadge.com/images/badges/check-it-out.svg">
+  </a>
           
-<h2 align=center> 👨🏻‍💻 How to get started? </h2> 
+<h1 align=center>🛠️ Installation Steps</h1>
 
-You can refer to the following articles on **_basics of Git and Github and also contact the Project Mentors, in case you are stuck_**:
 
-- [Forking a Repo](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
-- [Cloning a Repo](https://help.github.com/en/desktop/contributing-to-projects/creating-a-pull-request)
-- [How to create a Pull Request](https://opensource.com/article/19/7/create-pull-request-github)
-- [Getting started with Git and GitHub](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+1. Open Terminal and Clone the Repo
+
+```bash
+  git clone https://github.com/Subhradeep10/VideoApp.git
+```
+ 2. Cd Over 
+ 
+```bash
+   cd VideoApp
+```
+ 3. Run Pub
+```
+   Flutter pub get
+```
+4. Run App 
+```
+  Task Completed !!
+```
+
+<br>
 
 
 <h2 align=center> 📝 How to Contribute? </h2>  
