@@ -22,12 +22,12 @@
 1. Open Terminal and Clone the Repo
 
 ```bash
-  git clone https://github.com/Subhradeep10/VideoApp.git
+  git clone https://github.com/Subhradeep10/DevAcademy.git
 ```
  2. Cd Over 
  
 ```bash
-   cd VideoApp
+   cd DevAcademy
 ```
  3. Run Pub
 ```
