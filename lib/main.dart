@@ -8,12 +8,54 @@ import 'Screens/OpenSource.dart';
 import 'Screens/WebDevelopment.dart';
 import 'Screens/campus_ambassadar.dart';
 
-void main() {
+AppOpenAd? openAd;
+
+Future<void> loadAd() async {
+  await AppOpenAd.load(
+      adUnitId: 'ca-app-pub-5789367835300353/7450323412',
+      request: const AdRequest(),
+      adLoadCallback: AppOpenAdLoadCallback(onAdLoaded: (ad) {
+        print('ad is loaded');
+        openAd = ad;
+        // openAd!.show();
+      }, onAdFailedToLoad: (error) {
+        print('ad failed to load $error');
+      }),
+      orientation: AppOpenAd.orientationPortrait);
+}
+
+void showAd() {
+  if (openAd == null) {
+    print('trying tto show before loading');
+    loadAd();
+    return;
+  }
+
+  openAd!.fullScreenContentCallback =
+      FullScreenContentCallback(onAdShowedFullScreenContent: (ad) {
+    print('onAdShowedFullScreenContent');
+  }, onAdFailedToShowFullScreenContent: (ad, error) {
+    ad.dispose();
+    print('failed to load $error');
+    openAd = null;
+    loadAd();
+  }, onAdDismissedFullScreenContent: (ad) {
+    ad.dispose();
+    print('dismissed');
+    openAd = null;
+    loadAd();
+  });
+
+  openAd!.show();
+}
+
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final initFuture = MobileAds.instance.initialize(
-    appId: 'ca-app-pub-3940256099942544~3347511713',
-  );
-  runApp(MyApp());
+
+  await MobileAds.instance.initialize();
+
+  await loadAd();
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
