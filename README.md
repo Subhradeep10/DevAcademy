@@ -1,4 +1,4 @@
-![DevAcademy](https://socialify.git.ci/Subhradeep10/DevAcademy/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
+![DevAcademy](https://socialify.git.ci/Subhradeep10/DevAcademy/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&logo=https%3A%2F%2Fgithub.com%2FSubhradeep10%2FDevAcademy%2Fblob%2Fmaster%2Fassets%2Fimages%2Fsplash.png%3Fraw%3Dtrue&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 <h1 align=center> Tech Stack 🔥 </h1>  
   <p align="center">
   <img src="https://img.shields.io/badge/dart-%230175C2.svg?&style=for-the-badge&logo=dart&logoColor=white"/> <img src="https://img.shields.io/badge/Flutter%20-%2302569B.svg?&style=for-the-badge&logo=Flutter&logoColor=white" /> <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/>
