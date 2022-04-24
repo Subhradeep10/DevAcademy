@@ -7,10 +7,11 @@
 
 <h1 align=center> Application Preview 👀 </h1>
 <p align="center">
-    <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722758.png" height="363px" width="181px">
-  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722765.png" height="363px" width="181px">
-  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722793.png" height="363px" width="181px">
-  <img src="https://github.com/Subhradeep10/VideoApp/blob/master/screenshots/Screenshot_1650722799.png" height="363px" width="181px">
+    <img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image1.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image2.png" height="363px" width="181px">
+  <img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image3.png" height="363px" width="181px">
+	<img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image4.png" height="363px" width="181px">
+	<img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image5.png" height="363px" width="181px">
 <p align="center">
   <a href="https://github.com/Subhradeep10/DevAcademy/releases/download/v-1.0/DevAcademy.apk">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
