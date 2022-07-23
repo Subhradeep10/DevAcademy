@@ -7,6 +7,7 @@
   <img src="https://img.shields.io/badge/figma%20-%23121011.svg?&style=for-the-badge&logo=figma&logoColor=pink">
   </p>
 
+
 <h1 align=center> Application Preview 👀 </h1>
 <p align="center">
     <img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/image1.png" height="363px" width="181px">
