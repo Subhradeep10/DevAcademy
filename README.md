@@ -19,7 +19,9 @@
   <a href="https://github.com/Subhradeep10/DevAcademy/releases/download/v-1.0/DevAcademy.apk">
     <img src="https://forthebadge.com/images/badges/check-it-out.svg">
   </a>
-          
+  
+<h1 align=center> Give a Star if you like the project ⭐ </h1>
+
 <h1 align=center>🛠️ Installation Steps</h1>
 
 
