@@ -55,6 +55,12 @@
 - Create a Pull Request which will be promptly reviewed and suggestions would be added to improve it.
 - Add Screenshots to help us know what this Script is all about.
 
+<h2 align=center> Stargazers over Time ⭐</h2>  
+
+
+[![Stargazers over time](https://starchart.cc/Subhradeep10/DevAcademy.svg)](https://starchart.cc/Subhradeep10/DevAcademy)
+
+
 <h2 align=center> Project Admin ❤️ </h2>
 
 
