@@ -26,7 +26,7 @@ Future<void> loadAd() async {
 
 void showAd() {
   if (openAd == null) {
-    print('trying tto show before loading');
+    print('trying to show before loading');
     loadAd();
     return;
   }
