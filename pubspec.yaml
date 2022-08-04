@@ -37,6 +37,7 @@ dependencies:
   url_launcher: ^6.0.20
   provider: ^1.0.0
   google_mobile_ads: ^1.2.0
+  flutter_spinkit: ^5.1.0
 
 flutter_native_splash:
   color: "#001b47"

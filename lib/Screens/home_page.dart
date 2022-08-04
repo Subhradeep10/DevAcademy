@@ -32,6 +32,9 @@ class HomePage extends StatelessWidget {
               children: [
                 Text(
                   'DevAcademy',
+                  style: TextStyle(
+                    color: Colors.white,
+                  ),
                 ),
                 GestureDetector(
                   onTap: (){
