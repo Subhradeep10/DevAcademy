@@ -23,6 +23,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
+      debugShowCheckedModeBanner: false,
       routes: {
         "/": (context) => SplashScreen(),
         "/home": (context) => HomePage(),
