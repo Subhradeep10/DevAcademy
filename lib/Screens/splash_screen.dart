@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:dev_academy/login-signup/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -41,8 +42,7 @@ class _SplashScreenState extends State<SplashScreen> {
             SpinKitCircle(
               color: Color(0xfff46530),
               size: 100.0,
-            ),
-          ],
+            ),],
         ),
       ),
     );
