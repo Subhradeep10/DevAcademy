@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/Open_Source_Model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Widget/WebViewWidget.dart';
+
 class OpenSource extends StatefulWidget {
   const OpenSource({Key? key}) : super(key: key);
 
@@ -124,12 +126,17 @@ class _OpenSourceState extends State<OpenSource> {
                                       ),
                                       ElevatedButton(
                                           onPressed: () async {
-                                            final url = showData[index]['link'];
-                                            if (await canLaunch(url)) {
-                                              await launch(url);
-                                            } else {
-                                              throw 'Could not launch $url';
-                                            }
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    WebViewWidget(
+                                                      title: showData[index]
+                                                      ['head'],
+                                                      url: showData[index]['link'],
+                                                    ),
+                                              ),
+                                            );
                                           },
                                           child: const Text('View')),
                                       const SizedBox(

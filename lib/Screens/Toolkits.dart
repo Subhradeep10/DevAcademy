@@ -5,6 +5,8 @@ import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/Web_Dev_Model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Widget/WebViewWidget.dart';
+
 class Toolkits extends StatefulWidget {
   const Toolkits({Key? key}) : super(key: key);
 
@@ -123,12 +125,17 @@ class _ToolkitsState extends State<Toolkits> {
                                       ),
                                       ElevatedButton(
                                           onPressed: () async {
-                                            final url = showData[index]['link'];
-                                            if (await canLaunch(url)) {
-                                              await launch(url);
-                                            } else {
-                                              throw 'Could not launch $url';
-                                            }
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    WebViewWidget(
+                                                      title: showData[index]
+                                                      ['head'],
+                                                      url: showData[index]['link'],
+                                                    ),
+                                              ),
+                                            );
                                           },
                                           child: const Text('View')),
                                       const SizedBox(

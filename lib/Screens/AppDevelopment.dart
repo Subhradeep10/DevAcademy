@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+
 // ignore: library_prefixes
 import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/App_Dev_Model.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import '../Widget/WebViewWidget.dart';
 
 class AppDevelopment extends StatefulWidget {
   const AppDevelopment({Key? key}) : super(key: key);
@@ -122,12 +125,17 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                                       ),
                                       ElevatedButton(
                                           onPressed: () async {
-                                            final url = showData[index]['link'];
-                                            if (await canLaunch(url)) {
-                                              await launch(url);
-                                            } else {
-                                              throw 'Could not launch $url';
-                                            }
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    WebViewWidget(
+                                                  title: showData[index]
+                                                      ['head'],
+                                                  url: showData[index]['link'],
+                                                ),
+                                              ),
+                                            );
                                           },
                                           child: const Text('View')),
                                       const SizedBox(

@@ -7,6 +7,7 @@ import 'package:dev_academy/Model/Web_Dev_Model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../Widget/Search_Widget.dart';
+import '../Widget/WebViewWidget.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
@@ -128,12 +129,17 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                       ),
                                       ElevatedButton(
                                           onPressed: () async {
-                                            final url = showData[index]['link'];
-                                            if (await canLaunch(url)) {
-                                              await launch(url);
-                                            } else {
-                                              throw 'Could not launch $url';
-                                            }
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    WebViewWidget(
+                                                      title: showData[index]
+                                                      ['head'],
+                                                      url: showData[index]['link'],
+                                                    ),
+                                              ),
+                                            );
                                           },
                                           child: const Text('View')),
                                       const SizedBox(

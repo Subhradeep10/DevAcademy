@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+import '../Widget/WebViewWidget.dart';
+
 // ignore: library_prefixes
 import 'package:flutter/services.dart';
 import 'package:dev_academy/Model/Campus_Ambassador_Model.dart';
@@ -19,14 +21,16 @@ class _CampusAmbassadorState extends State<CampusAmbassador> {
       child: Container(
         width: MediaQuery.of(context).size.width - 20,
         decoration: const BoxDecoration(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-            gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.fromARGB(255, 60, 32, 65),
-                  Color.fromARGB(255, 19, 0, 77)
-                ])),
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [
+              Color.fromARGB(255, 60, 32, 65),
+              Color.fromARGB(255, 19, 0, 77)
+            ],
+          ),
+        ),
         child: Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
@@ -122,12 +126,17 @@ class _CampusAmbassadorState extends State<CampusAmbassador> {
                                       ),
                                       ElevatedButton(
                                           onPressed: () async {
-                                            final url = showData[index]['link'];
-                                            if (await canLaunch(url)) {
-                                              await launch(url);
-                                            } else {
-                                              throw 'Could not launch $url';
-                                            }
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                builder: (context) =>
+                                                    WebViewWidget(
+                                                  title: showData[index]
+                                                      ['head'],
+                                                  url: showData[index]['link'],
+                                                ),
+                                              ),
+                                            );
                                           },
                                           child: const Text('View')),
                                       const SizedBox(
