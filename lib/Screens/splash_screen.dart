@@ -1,6 +1,6 @@
 import 'dart:async';
-
-import 'package:dev_academy/login-signup/signup.dart';
+import 'package:dev_academy/login-signup/signup_widget.dart';
+import 'package:dev_academy/login-signup/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -18,7 +18,8 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     Timer(
       Duration(seconds: 5),
-          () => Navigator.pushNamed(context, '/home'),
+          () => Navigator.push(context,
+            MaterialPageRoute(builder: (context) => SignUpWidget()),),
     );
   }
 

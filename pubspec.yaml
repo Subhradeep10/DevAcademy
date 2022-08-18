@@ -39,9 +39,15 @@ dependencies:
   google_fonts: ^2.3.1
   google_mobile_ads: ^1.2.0
   flutter_spinkit: ^5.1.0
+  google_sign_in: ^5.3.0
+  toast: ^0.3.0
+  font_awesome_flutter: ^10.1.0
   firebase_auth: ^3.4.2
   firebase_core:
   cloud_firestore:
+  email_validator: '^2.0.1'
+  http: any
+  shared_preferences: any
 
 flutter_native_splash:
   color: "#001b47"
