@@ -3,7 +3,6 @@ import 'package:dev_academy/Screens/home_page.dart';
 import 'package:dev_academy/Screens/splash_screen.dart';
 import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'Screens/AppDevelopment.dart';
 import 'Screens/OpenSource.dart';
 import 'Screens/WebDevelopment.dart';
@@ -23,15 +22,57 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
       ),
-      routes: {
-        "/": (context) => SplashScreen(),
-        "/home": (context) => HomePage(),
-        MyRoutes.CampusAmbassador: (context) => CampusAmbassador(),
-        MyRoutes.WebDevelopment: (context) => WebDevelopment(),
-        MyRoutes.OpenSource: (context) => OpenSource(),
-        MyRoutes.Toolkits: (context) => Toolkits(),
-        MyRoutes.AppDevelopment: (context) => AppDevelopment(),
-      },
+      onGenerateRoute: (settings) {
+        if (settings.name == MyRoutes.CampusAmbassador) {
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => CampusAmbassador(),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+        else if (settings.name == MyRoutes.WebDevelopment) {
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => WebDevelopment(),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+        else if (settings.name == MyRoutes.OpenSource) {
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => OpenSource(),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+        else if (settings.name == MyRoutes.Toolkits) {
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => Toolkits(),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+        else if (settings.name == MyRoutes.AppDevelopment) {
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => AppDevelopment(),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+        else if(settings.name=='/'){
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => SplashScreen()
+          );
+        }
+        else if(settings.name=='/home'){
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => HomePage()
+          );
+        }
+        // Unknown route
+
+      }
     );
   }
 }
