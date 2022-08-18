@@ -67,23 +67,33 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                         itemCount: showData.length,
                         itemBuilder: (BuildContext context, int index) {
                           return Center(
-                            child: Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10))),
                               child: Container(
-                                width: MediaQuery.of(context).size.width - 20,decoration: BoxDecoration(borderRadius:BorderRadius.all(Radius.circular(10)) ),
-                                child: InkWell(onTap: () async {
-                                  final url = showData[index]['link'];
-                                  if (await canLaunch(url)) {
-                                    await launch(url);
-                                  } else {
-                                    throw 'Could not launch $url';
-                                  }
-                                },splashColor: Color(0xff673ab7),
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                width: MediaQuery.of(context).size.width - 20,
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10))),
+                                child: InkWell(
+                                  onTap: () async {
+                                    final url = showData[index]['link'];
+                                    if (await canLaunch(url)) {
+                                      await launch(url);
+                                    } else {
+                                      throw 'Could not launch $url';
+                                    }
+                                  },
+                                  splashColor: Color(0xff673ab7),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
                                   child: Ink(
-                                    width: MediaQuery.of(context).size.width - 20,
+                                    width:
+                                        MediaQuery.of(context).size.width - 20,
                                     decoration: const BoxDecoration(
-                                        borderRadius:
-                                        BorderRadius.all(Radius.circular(10)),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
                                         gradient: LinearGradient(
                                             begin: Alignment.topLeft,
                                             end: Alignment.bottomRight,
@@ -93,7 +103,7 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                                             ])),
                                     child: Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                       children: [
                                         const SizedBox(
                                           height: 10,
@@ -102,7 +112,8 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                                           image: AssetImage(
                                               showData[index]['image']),
                                           width: 350,
-                                        ),const SizedBox(
+                                        ),
+                                        const SizedBox(
                                           height: 10,
                                         ),
                                         Text(
@@ -127,28 +138,30 @@ class _AppDevelopmentState extends State<AppDevelopment> {
                                                 fontWeight: FontWeight.bold),
                                           ),
                                         ),
-                                      const SizedBox(
-                                        height: 10,
-                                      ),
-                                      ElevatedButton(
-                                          onPressed: () async {
-                                            Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                builder: (context) =>
-                                                    WebViewWidget(
-                                                  title: showData[index]
-                                                      ['head'],
-                                                  url: showData[index]['link'],
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
+                                        ElevatedButton(
+                                            onPressed: () async {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      WebViewWidget(
+                                                    title: showData[index]
+                                                        ['head'],
+                                                    url: showData[index]
+                                                        ['link'],
+                                                  ),
                                                 ),
-                                              ),
-                                            );
-                                          },
-                                          child: const Text('View')),
-                                      const SizedBox(
-                                        height: 10,
-                                      ),
-                                    ],
+                                              );
+                                            },
+                                            child: const Text('View')),
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
