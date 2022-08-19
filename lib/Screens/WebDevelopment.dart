@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'dart:convert';
+
 // ignore: library_prefixes
 import 'package:url_launcher/url_launcher.dart';
-
+import '../Widget/Search_Widget.dart';
+import '../Widget/WebViewWidget.dart';
 
 class WebDevelopment extends StatefulWidget {
   const WebDevelopment({Key? key}) : super(key: key);
@@ -67,23 +69,33 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                         itemCount: showData.length,
                         itemBuilder: (BuildContext context, int index) {
                           return Center(
-                            child: Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
+                            child: Card(
+                              shape: RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10))),
                               child: Container(
-                                width: MediaQuery.of(context).size.width - 20,decoration: BoxDecoration(borderRadius:BorderRadius.all(Radius.circular(10)) ),
-                                child: InkWell(onTap: () async {
-                                  final url = showData[index]['link'];
-                                  if (await canLaunch(url)) {
-                                    await launch(url);
-                                  } else {
-                                    throw 'Could not launch $url';
-                                  }
-                                },splashColor: Color(0xff673ab7),
-                                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                                width: MediaQuery.of(context).size.width - 20,
+                                decoration: BoxDecoration(
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(10))),
+                                child: InkWell(
+                                  onTap: () async {
+                                    final url = showData[index]['link'];
+                                    if (await canLaunch(url)) {
+                                      await launch(url);
+                                    } else {
+                                      throw 'Could not launch $url';
+                                    }
+                                  },
+                                  splashColor: Color(0xff673ab7),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(10)),
                                   child: Ink(
-                                    width: MediaQuery.of(context).size.width - 20,
+                                    width:
+                                        MediaQuery.of(context).size.width - 20,
                                     decoration: const BoxDecoration(
-                                        borderRadius:
-                                        BorderRadius.all(Radius.circular(10)),
+                                        borderRadius: BorderRadius.all(
+                                            Radius.circular(10)),
                                         gradient: LinearGradient(
                                             begin: Alignment.topLeft,
                                             end: Alignment.bottomRight,
@@ -93,7 +105,7 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                             ])),
                                     child: Column(
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                       children: [
                                         const SizedBox(
                                           height: 10,
@@ -102,7 +114,8 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                           image: AssetImage(
                                               showData[index]['image']),
                                           width: 350,
-                                        ),const SizedBox(
+                                        ),
+                                        const SizedBox(
                                           height: 10,
                                         ),
                                         Text(
@@ -116,6 +129,25 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                         const SizedBox(
                                           height: 10,
                                         ),
+                                        ElevatedButton(
+                                            onPressed: () async {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      WebViewWidget(
+                                                    title: showData[index]
+                                                        ['head'],
+                                                    url: showData[index]
+                                                        ['link'],
+                                                  ),
+                                                ),
+                                              );
+                                            },
+                                            child: const Text('View')),
+                                        const SizedBox(
+                                          height: 10,
+                                        ),
                                         Padding(
                                           padding: const EdgeInsets.all(10.0),
                                           child: Text(
@@ -126,9 +158,6 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold),
                                           ),
-                                        ),
-                                        const SizedBox(
-                                          height: 10,
                                         ),
                                         const SizedBox(
                                           height: 10,
