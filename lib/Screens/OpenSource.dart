@@ -4,6 +4,7 @@ import 'dart:convert';
 // ignore: library_prefixes
 import 'package:url_launcher/url_launcher.dart';
 
+import '../Utils/Routes.dart';
 import '../Widget/WebViewWidget.dart';
 
 class OpenSource extends StatefulWidget {
@@ -78,18 +79,8 @@ class _OpenSourceState extends State<OpenSource> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: InkWell(
                                   onTap: () async {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            WebViewWidget(
-                                              title: showData[index]
-                                              ['head'],
-                                              url: showData[index]
-                                              ['link'],
-                                            ),
-                                      ),
-                                    );
+                                    Navigator.pushNamed(context,MyRoutes.Web+'/'+showData[index]['head']+'|'+showData[index]['link'],);
+
                                   },
                                   splashColor: Color(0xff673ab7),
                                   borderRadius:

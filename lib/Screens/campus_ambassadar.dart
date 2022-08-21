@@ -1,3 +1,4 @@
+import 'package:dev_academy/Utils/Routes.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 import '../Widget/WebViewWidget.dart';
@@ -79,18 +80,8 @@ class _CampusAmbassadorState extends State<CampusAmbassador> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: InkWell(
                                   onTap: () async {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder: (context) =>
-                                            WebViewWidget(
-                                              title: showData[index]
-                                              ['head'],
-                                              url: showData[index]
-                                              ['link'],
-                                            ),
-                                      ),
-                                    );
+                                    Navigator.pushNamed(context,MyRoutes.Web+'/'+showData[index]['head']+'|'+showData[index]['link'],);
+
                                   },
                                   splashColor: Color(0xff673ab7),
                                   borderRadius:
