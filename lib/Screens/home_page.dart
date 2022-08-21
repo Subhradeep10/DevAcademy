@@ -41,8 +41,9 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 GestureDetector(
-                  onTap: (){
-                    launch('https://www.producthunt.com/posts/devacademy?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-devacademy');
+                  onTap: () {
+                    launch(
+                        'https://www.producthunt.com/posts/devacademy?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-devacademy');
                   },
                   child: Container(
                     height: 30,

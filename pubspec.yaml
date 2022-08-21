@@ -38,6 +38,7 @@ dependencies:
   provider: ^1.0.0
   google_mobile_ads: ^1.2.0
   flutter_spinkit: ^5.1.0
+  webview_flutter: ^3.0.4
 
 flutter_native_splash:
   color: "#001b47"
