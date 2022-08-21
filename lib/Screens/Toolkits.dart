@@ -78,12 +78,18 @@ class _ToolkitsState extends State<Toolkits> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: InkWell(
                                   onTap: () async {
-                                    final url = showData[index]['link'];
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) =>
+                                            WebViewWidget(
+                                              title: showData[index]
+                                              ['head'],
+                                              url: showData[index]
+                                              ['link'],
+                                            ),
+                                      ),
+                                    );
                                   },
                                   splashColor: Color(0xff673ab7),
                                   borderRadius:
@@ -127,25 +133,6 @@ class _ToolkitsState extends State<Toolkits> {
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        ElevatedButton(
-                                            onPressed: () async {
-                                              Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      WebViewWidget(
-                                                    title: showData[index]
-                                                        ['head'],
-                                                    url: showData[index]
-                                                        ['link'],
-                                                  ),
-                                                ),
-                                              );
-                                            },
-                                            child: const Text('View')),
-                                        const SizedBox(
-                                          height: 10,
-                                        ),
                                         Padding(
                                           padding: const EdgeInsets.all(10.0),
                                           child: Text(
@@ -156,6 +143,9 @@ class _ToolkitsState extends State<Toolkits> {
                                                 fontSize: 16,
                                                 fontWeight: FontWeight.bold),
                                           ),
+                                        ),
+                                        const SizedBox(
+                                          height: 10,
                                         ),
                                         const SizedBox(
                                           height: 10,
