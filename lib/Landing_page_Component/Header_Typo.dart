@@ -18,12 +18,15 @@ class Header_Component extends StatelessWidget {
           height: 15,
         ),
         Center(
-          child: Text(
-            'Welcome To Developer Academy',
-            style: TextStyle(
-                fontSize: 24,
-                color: Color.fromARGB(255, 255, 255, 255),
-                fontWeight: FontWeight.bold),
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 15),
+            child: Text(
+              'Welcome To Developer Academy',
+              style: TextStyle(
+                  fontSize: 24,
+                  color: Color.fromARGB(255, 255, 255, 255),
+                  fontWeight: FontWeight.bold),
+            ),
           ),
         ),
         SizedBox(
