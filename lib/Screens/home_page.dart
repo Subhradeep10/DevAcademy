@@ -27,6 +27,10 @@ class HomePage extends StatelessWidget {
           backgroundColor: Colors.transparent,
           appBar: AppBar(
             backgroundColor: const Color.fromARGB(255, 0, 24, 59),
+            leading: SizedBox(
+              width: 0,
+            ),
+            leadingWidth: 0,
             title: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
