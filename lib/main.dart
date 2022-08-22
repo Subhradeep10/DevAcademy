@@ -2,6 +2,7 @@ import 'package:dev_academy/Screens/Toolkits.dart';
 import 'package:dev_academy/Screens/home_page.dart';
 import 'package:dev_academy/Screens/splash_screen.dart';
 import 'package:dev_academy/Utils/Routes.dart';
+import 'package:dev_academy/Widget/WebViewWidget.dart';
 import 'package:flutter/material.dart';
 import 'Screens/AppDevelopment.dart';
 import 'Screens/OpenSource.dart';
@@ -58,6 +59,14 @@ class MyApp extends StatelessWidget {
               transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
           );
         }
+        else if(settings.name?.split('/')[1]=='Web'){
+          return PageRouteBuilder(
+              settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works
+              pageBuilder: (_, __, ___) => WebViewWidget(title: settings.name!.split('|')[0].split('/')[2], url: settings.name!.split('|')[1]),
+              transitionsBuilder: (_, a, __, c) => ScaleTransition(scale: a,child: c,)
+          );
+        }
+
         else if(settings.name=='/'){
           return PageRouteBuilder(
               settings: settings, // Pass this to make popUntil(), pushNamedAndRemoveUntil(), works

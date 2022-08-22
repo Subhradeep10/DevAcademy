@@ -3,6 +3,7 @@ import 'dart:convert';
 
 // ignore: library_prefixes
 import 'package:url_launcher/url_launcher.dart';
+import '../Utils/Routes.dart';
 import '../Widget/Search_Widget.dart';
 import '../Widget/WebViewWidget.dart';
 
@@ -80,12 +81,8 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: InkWell(
                                   onTap: () async {
-                                    final url = showData[index]['link'];
-                                    if (await canLaunch(url)) {
-                                      await launch(url);
-                                    } else {
-                                      throw 'Could not launch $url';
-                                    }
+                                    Navigator.pushNamed(context,MyRoutes.Web+'/'+showData[index]['head']+'|'+showData[index]['link'],);
+
                                   },
                                   splashColor: Color(0xff673ab7),
                                   borderRadius:
@@ -129,22 +126,6 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                         const SizedBox(
                                           height: 10,
                                         ),
-                                        ElevatedButton(
-                                            onPressed: () async {
-                                              Navigator.push(
-                                                context,
-                                                MaterialPageRoute(
-                                                  builder: (context) =>
-                                                      WebViewWidget(
-                                                    title: showData[index]
-                                                        ['head'],
-                                                    url: showData[index]
-                                                        ['link'],
-                                                  ),
-                                                ),
-                                              );
-                                            },
-                                            child: const Text('View')),
                                         const SizedBox(
                                           height: 10,
                                         ),

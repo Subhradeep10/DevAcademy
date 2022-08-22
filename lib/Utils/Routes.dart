@@ -4,4 +4,5 @@ class MyRoutes {
   static String WebDevelopment = '/WebDevelopment';
   static String AppDevelopment = '/AppDevelopment';
   static String Toolkits = '/Toolkits';
+  static String Web = '/Web';
 }
