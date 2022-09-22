@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'dart:convert';
 
@@ -81,8 +82,16 @@ class _WebDevelopmentState extends State<WebDevelopment> {
                                         BorderRadius.all(Radius.circular(10))),
                                 child: InkWell(
                                   onTap: () async {
-                                    Navigator.pushNamed(context,MyRoutes.Web+'/'+showData[index]['head']+'|'+showData[index]['link'],);
 
+                                    if(kIsWeb){
+                                      launch(showData[index]['link']);
+                                    }
+                                    else {
+                                      Navigator.pushNamed(context,
+                                        MyRoutes.Web + '/' +
+                                            showData[index]['head'] + '|' +
+                                            showData[index]['link'],);
+                                    }
                                   },
                                   splashColor: Color(0xff673ab7),
                                   borderRadius:
