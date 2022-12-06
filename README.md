@@ -1,3 +1,4 @@
+
 <p align="center">
    <img src="https://github.com/Subhradeep10/DevAcademy/blob/master/screenshots/DevAcademyTemplate.png" />
 </p>
